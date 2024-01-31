@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(249, 208, 255);
+  min-height: 10vh;
+  padding: 0 5px;
+}
+ul {
+  display: inline-flex;
+}
+ul li {
+  margin-right: 1rem;
+  padding: 0.5rem;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+ul li:hover {
+  background-color: aqua;
+  border-radius: 5px;
+}
+
+.logo {
+  border: 2px solid rgb(21, 180, 6);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#banner-section {
+  display: flex;
+}
+
+.article {
+  border: 1px solid;
+  padding: 20px;
+  flex: 2;
+  margin: 20px;
+  background-color: rgb(131, 253, 120);
+  box-shadow: 1px 2px 4px 1px black;
+  transition: 0.5s;
+}
+.article:hover {
+  transform: translateX(200px);
+}
+
+.arf {
+  animation: arf 1 1s ease-in;
+}
+@keyframes arf {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.aside {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid;
+  margin: 20px;
+  background-color: rgb(226, 120, 253);
+}
+
+.asf {
+  animation: firt 1s 1s ease-in;
+}
+@keyframes firt {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.as1 {
+  animation: as1 2s ease-in;
+  animation-delay: 2s;
+}
+
+@keyframes as1 {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.ar1 {
+  animation: as1 2s ease-in;
+  animation-delay: 2s;
+}
+
+@keyframes ar1 {
+  from {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
